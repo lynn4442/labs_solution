@@ -1,0 +1,57 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run TCP Server",
+            "request": "launch",
+            "mainClass": "TcpServer",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "Run TCP Client 1",
+            "request": "launch",
+            "mainClass": "TcpClient",
+            "args": ["127.0.0.1", "5000"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "Run TCP Client 2",
+            "request": "launch",
+            "mainClass": "TcpClient",
+            "args": ["127.0.0.1", "5000"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "Run UDP Server",
+            "request": "launch",
+            "mainClass": "UdpServer",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "Run UDP Client 1",
+            "request": "launch",
+            "mainClass": "UdpClient",
+            "args": ["127.0.0.1", "6000"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "Run UDP Client 2",
+            "request": "launch",
+            "mainClass": "UdpClient",
+            "args": ["127.0.0.1", "6000"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
