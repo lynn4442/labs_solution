@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option java_package = "lab.grpc";
+option java_outer_classname = "CounterProto";
+
+service CounterService {
+  rpc Increment (IncrementRequest) returns (IncrementResponse);
+  rpc StreamValues (StreamRequest) returns (stream StreamResponse);
+}
+
+message IncrementRequest {
+  int32 value = 1;
+}
+
+message IncrementResponse {
+  int32 newValue = 1;
+}
+
+message StreamRequest {
+  int32 count = 1;
+  int32 delayMs = 2;
+}
+
+message StreamResponse {
+  int32 counterValue = 1;
+}
